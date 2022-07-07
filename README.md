@@ -32,23 +32,19 @@ app/views/presenters/<class_name>/_default.html.erb
 app/views/presenters/<class_name>/_<template>.html.erb
 ```
 
-And would be used thusly:
+And can be used like so:
 
 ```ruby
 present(@person, :emotion).render
 
 # => app/presenters/emotion_presenter.rb
 # => app/views/presenters/emotion/_default.html.erb
-```
 
-```ruby
 present(@person, :emotion).render(:happy)
 
 # => app/presenters/emotion_presenter.rb
 # => app/views/presenters/emotion/_happy.html.erb
-```
 
-```ruby
 present(@person, :emotion).render(:sad)
 
 # => app/presenters/emotion_presenter.rb
@@ -113,23 +109,16 @@ Here are a few different ways to utilize presenters:
 
 ```ruby
 # Render (Default)
-
 present(@person, :share).render
 present(@person, :share).render(:twitter)
 present(@person, :share).render('social/twitter')
-```
 
-```ruby
 # Block
-
 present(@person, :share) do |p|
   link_to p.text, p.url
 end
-```
 
-```ruby
 # Object
-
 share = present(@person, :share)
 
 share.render(:twitter)
