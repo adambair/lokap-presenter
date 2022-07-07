@@ -9,6 +9,10 @@ Add this line to your application's Gemfile:
 gem 'lokap-presenter'
 ```
 
+## Documentation
+
+See https://rubydoc.info/github/adambair/lokap-presenter
+
 ## Usage
 
 Call the presenter within your view using the `present` helper:
