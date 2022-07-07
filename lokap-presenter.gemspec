@@ -17,6 +17,7 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"]    = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/adambair/lokap-presenter/"
   spec.metadata["changelog_uri"]   = "https://github.com/adambair/lokap-presenter/blob/master/CHANGELOG.md"
+  spec.metadata["bug_tracker_uri"] = "https://github.com/adambair/lokap-presenter/issues"
 end
 
   spec.files = Dir.chdir(__dir__) do
