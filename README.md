@@ -36,17 +36,14 @@ And can be used like so:
 
 ```ruby
 present(@person, :emotion).render
-
 # => app/presenters/emotion_presenter.rb
 # => app/views/presenters/emotion/_default.html.erb
 
 present(@person, :emotion).render(:happy)
-
 # => app/presenters/emotion_presenter.rb
 # => app/views/presenters/emotion/_happy.html.erb
 
 present(@person, :emotion).render(:sad)
-
 # => app/presenters/emotion_presenter.rb
 # => app/views/presenters/emotion/_sad.html.erb
 ```
@@ -120,7 +117,6 @@ end
 
 # Object
 share = present(@person, :share)
-
 share.render(:twitter)
 share.render(:facebook)
 share.render(:email)
