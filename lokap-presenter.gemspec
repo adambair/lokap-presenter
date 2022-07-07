@@ -6,13 +6,13 @@ Gem::Specification.new do |spec|
   spec.authors = ["Adam Bair"]
   spec.email   = ["adambair@gmail.com"]
 
+  spec.licenses    = "Nonstandard"
   spec.summary     = "A view presenter for those with discerning taste"
-  spec.description = ""
   spec.homepage    = "https://github.com/adambair/lokap-presenter"
 
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["allowed_push_host"] = ""
+  spec.metadata["allowed_push_host"] = "https://rubygems.org/"
 
   spec.metadata["homepage_uri"]    = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
@@ -24,7 +24,5 @@ Gem::Specification.new do |spec|
     end
   end
 
-  spec.bindir = "exe"
-  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 end
