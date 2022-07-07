@@ -1,0 +1,5 @@
+--private
+--markup-provider=redcarpet
+--markup=markdown
+-
+CHANGELOG.md
