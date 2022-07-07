@@ -1,5 +1,3 @@
-# Lokap::Presenter
-
 A simple Rails view presenter for those with discerning taste.  
 _From the Library of Knowledge and Power_
 
