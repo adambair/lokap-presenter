@@ -6,5 +6,8 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+
 tags
+tags*
 *.gem

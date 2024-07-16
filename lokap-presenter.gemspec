@@ -2,23 +2,22 @@
 
 Gem::Specification.new do |spec|
   spec.name    = "lokap-presenter"
-  spec.version = '0.0.1'
+  spec.version = '0.0.2'
+
   spec.authors = ["Adam Bair"]
   spec.email   = ["adambair@gmail.com"]
 
-  spec.licenses    = "Nonstandard"
-  spec.summary     = "A view presenter for those with discerning taste"
-  spec.homepage    = "https://github.com/adambair/lokap-presenter"
+  spec.licenses = "Nonstandard"
+  spec.summary  = "A view presenter for those with discerning taste"
+  spec.homepage = "https://github.com/adambair/lokap-presenter"
 
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org/"
-
-  spec.metadata["homepage_uri"]    = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/adambair/lokap-presenter/"
-  spec.metadata["changelog_uri"]   = "https://github.com/adambair/lokap-presenter/blob/master/CHANGELOG.md"
-  spec.metadata["bug_tracker_uri"] = "https://github.com/adambair/lokap-presenter/issues"
-end
+  spec.metadata["homepage_uri"]      = spec.homepage
+  spec.metadata["source_code_uri"]   = "https://github.com/adambair/lokap-presenter/"
+  spec.metadata["changelog_uri"]     = "https://github.com/adambair/lokap-presenter/blob/master/CHANGELOG.md"
+  spec.metadata["bug_tracker_uri"]   = "https://github.com/adambair/lokap-presenter/issues"
 
   spec.files = Dir.chdir(__dir__) do
     `git ls-files -z`.split("\x0").reject do |f|

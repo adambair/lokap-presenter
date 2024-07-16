@@ -78,14 +78,14 @@ module Lokap
     # @return [String] Full path to the template's partial
     def template_path(partial=nil)
       template = partial || default_template
-      "/presenters/#{class_path}/#{template}".downcase
+      "#{class_path}/#{template}".downcase
     end
 
     # Generates the name for the class segment of the path
     # @note Removes `_presenter` from the resulting string if present
     # @return [String] Path for the subclassed presenter
     def class_path
-      self.class.name.underscore.gsub('_presenter', '')
+      self.class.name.underscore.gsub('_presenter', '').gsub('/presenter', '')
     end
 
     # Generates the default partial path when a template is not found or specified

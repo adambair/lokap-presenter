@@ -1,4 +1,4 @@
-A simple Rails view presenter for those with discerning taste.  
+A simple Rails view presenter for those with discerning taste.
 _From the Library of Knowledge and Power_
 
 ## Installation
@@ -59,7 +59,7 @@ p.show_emotion
 
 ### The Presenter Class
 
-The class has full access to the view... and view helpers, etc.  
+The class has full access to the view... and view helpers, etc.
 _Think of this as a helper on steroids (but less angry)_
 
 ```ruby
