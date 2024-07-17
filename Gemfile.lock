@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lokap-presenter (0.0.1)
+    lokap-presenter (0.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -16,6 +16,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-22
 
 DEPENDENCIES
   github-markup

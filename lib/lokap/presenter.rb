@@ -90,7 +90,7 @@ module Lokap
 
     # Generates the default partial path when a template is not found or specified
     # @param partial [String] full path to the template's partial
-    # @returns [String] full path to the specified template or the default template
+    # @return [String] full path to the specified template or the default template
     def default_path(partial=nil)
       return unless partial
       prefix = partial.to_s.split('/')[0..-2].join('/')

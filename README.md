@@ -30,8 +30,8 @@ app/presenters/<class_name>_presenter.rb
 Templates will be searched for in:
 
 ```
-app/views/presenters/<class_name>/_default.html.erb
-app/views/presenters/<class_name>/_<template>.html.erb
+app/presenters/<class_name>/_default.html.erb
+app/presenters/<class_name>/_<template>.html.erb
 ```
 
 And can be used like so:
@@ -39,15 +39,15 @@ And can be used like so:
 ```ruby
 present(@person, :emotion).render
 # => app/presenters/emotion_presenter.rb
-# => app/views/presenters/emotion/_default.html.erb
+# => app/presenters/emotion/_default.html.erb
 
 present(@person, :emotion).render(:happy)
 # => app/presenters/emotion_presenter.rb
-# => app/views/presenters/emotion/_happy.html.erb
+# => app/presenters/emotion/_happy.html.erb
 
 present(@person, :emotion).render(:sad)
 # => app/presenters/emotion_presenter.rb
-# => app/views/presenters/emotion/_sad.html.erb
+# => app/presenters/emotion/_sad.html.erb
 ```
 
 Access the presenter inside your presenter templates:
@@ -89,8 +89,8 @@ default view.
 ```ruby
 present(@person, :share).render(:twitter)
 
-# looks for /views/presenters/share/_twitter.html.erb (doesn't exist)
-# => /views/presenters/share/_default.html.erb
+# looks for app/presenters/share/_twitter.html.erb (doesn't exist)
+# => app/presenters/share/_default.html.erb
 ```
 
 This will also work for templates inside subfolders:
@@ -98,8 +98,8 @@ This will also work for templates inside subfolders:
 ```ruby
 present(@person, :share).render('social/twitter')
 
-# looks for /views/presenters/share/social/_twitter.html.erb (doesn't exist)
-# => /views/presenters/share/social/_default.html.erb
+# looks for app/presenters/share/social/_twitter.html.erb (doesn't exist)
+# => app/presenters/share/social/_default.html.erb
 ```
 
 ## Examples
